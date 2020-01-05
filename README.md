@@ -10,11 +10,13 @@ The filtering window may be 4 or 8.
 - CMake
 
 ## Launch
-###Warning ! 
+Warning ! 
 Before launching the package, you may change the path to the bag file you want to filter into the launch file.
 The launch file is located at the root of the package: wyca_internship_test > ProjectLauncher.launch
 You may open this file, and change the path to the bag file into your own, line 6:
-"<node pkg="rosbag" type="play" name="rosbag" args="/home/anaelle/ros_ws/src/wyca_internship_test/src/2019-11-28-14-30-16.bag"/>"
+```
+<node pkg="rosbag" type="play" name="rosbag" args="/home/anaelle/ros_ws/src/wyca_internship_test/src/2019-11-28-14-30-16.bag"/>
+```
 
 To launch the package, you may write into a terminal:
 
@@ -35,8 +37,8 @@ roslaunch wyca_internship_test ProjectLauncher.launch "type":='median' "size":=8
 
 ## Built with
 * ROS Kinetic
-* Ubuntu 16
-* QT Creator
+* Ubuntu 16.04
+* QT 5.5.1, GCC
 
 ## Author
 * Anaelle Sarazin-Wronka _alias_ [ana-sw](https://github.com/ana-sw)
