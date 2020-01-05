@@ -1,0 +1,8 @@
+<launch>
+	<arg name="type" default="average"/>
+	<arg name="size" default="4"/> 
+	<param name="filter_type" value="$(arg type)"/>
+	<param name="window_size" value="$(arg size)"/>
+  	<node pkg="rosbag" type="play" name="rosbag" args="/home/anaelle/ros_ws/src/wyca_internship_test/src/2019-11-28-14-30-16.bag"/>
+	<node name="laser_scan_filter" pkg="wyca_internship_test" type="laser_scan_filter" output="screen"/>
+</launch>
